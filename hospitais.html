@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Hospitais - InfoSaúde</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue.css">
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    body {
+      font-family: "Lato", sans-serif
+    }
+
+    .mySlides {
+      display: none
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card top-nav">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)"
+        onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+      <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTATOS</a>
+      <a href="hospitais.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HOSPITAIS</a>
+      <a href="clinicas.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CLÍNICAS</a>
+      <a href="postos.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">POSTOS</a>
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More">MAIS <i class="fa fa-caret-down"></i></button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="sobre.html" class="w3-bar-item w3-button">SOBRE</a>
+          <a href="#" class="w3-bar-item w3-button">PREÇOS</a>
+          <a href="#" class="w3-bar-item w3-button">MAPA</a>
+        </div>
+      </div>
+      <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i
+          class="fa fa-search"></i></a>
+    </div>
+  </div>
+
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+  </div>
+
+  <!-- Header -->
+  <header class="w3-container w3-theme w3-padding" id="myHeader">
+    <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i>
+    <div class="w3-center">
+      <h4> </h4>
+      <img class="w3-image" src="imagens/logo1.png" alt="Architecture" width="300" height="300">
+      </a>
+    </div>
+    </div>
+  </header>
+
+  <div class="w3-black">
+    <div class="w3-container w3-content w3-padding-5" style="max-width:800px">
+      <h2 class="w3-wide w3-center">Hospitais:</h2>
+      <p class="w3-opacity w3-center"><i>Hospitais da cidade de Pedro II e região</i></p><br>
+      <div class="wrap-filters">
+        <div class="search-input">
+
+          <i class="fa fa-search"></i>
+          <input type="text" name="search" placeholder="Buscar hospital..">
+        </div>
+      </div>
+
+      <div class="clinicas-grid">
+        <div class="clinica-item">
+          <img src="imagens/hospital1.webp" alt="New York" class="border-top" style="width:100%">
+          <div class="w3-container w3-white border-bottom">
+            <p><b>HOSPITAL JOSEFINA</b></p>
+            <p class="w3-opacity">Horario 08:00 ás 18:00<br><br></p>
+            <p>Rua Raimundo José Leite Bairro: Santa fé</p>
+            <div class="operations">
+              <a href=clinica1.html class="w3-button w3-black w3-margin-bottom more-detail-btn">Saiba Mais</a>
+            </div>
+          </div>
+        </div>
+        <div class="clinica-item">
+          <img src="imagens/hospital2.webp" alt="Paris" class="border-top" style="width:100%">
+          <div class="w3-container w3-white border-bottom">
+            <p><b>Hospital São Camilo</b></p>
+            <p class="w3-opacity">Horário de funcionamento 08:00 ás 18:00</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <div class="operations">
+              <a href=clinica1.html class="w3-button w3-black w3-margin-bottom more-detail-btn">Saiba Mais</a>
+            </div>
+          </div>
+        </div>
+        <div class="clinica-item">
+          <img src="imagens/clinica3.webp" alt="San Francisco" class="border-top" style="width:100%">
+          <div class="w3-container w3-white border-bottom">
+            <p><b>San Francisco</b></p>
+            <p class="w3-opacity">Horário de funcionamento 08:00 ás 18:00</p>
+            <p>Rua João Benício da Silva, 524. Centro, Pedro II</p>
+            <div class="operations">
+              <a href=clinica1.html class="w3-button w3-black w3-margin-bottom more-detail-btn">Saiba Mais</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="clinica-item ">
+          <img src="imagens/noimage.webp" alt="New York" class="border-top" style="width:100%">
+          <div class="w3-container w3-white border-bottom">
+            <p><b>None</b></p>
+            <p class="w3-opacity">Horário de funcionamento 08:00 ás 18:00</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <div class="operations">
+              <a href=clinica2.html class="w3-button w3-black w3-margin-bottom more-detail-btn">Saiba Mais</a>
+            </div>
+          </div>
+        </div>
+        <div class="clinica-item ">
+          <img src="imagens/noimage.webp" alt="san francisco" class="border-top" style="width:100%">
+          <div class="w3-container w3-white border-bottom">
+            <p><b>none </b></p>
+            <p class="w3-opacity">horário de funcionamento 08:00 ás 18:00</p>
+            <p>praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <div class="operations">
+              <a href=clinica1.html class="w3-button w3-black w3-margin-bottom more-detail-btn">saiba mais</a>
+            </div>
+          </div>
+        </div>
+        <div class="clinica-item ">
+          <img src="imagens/noimage.webp" alt="san francisco" class="border-top" style="width:100%">
+          <div class="w3-container w3-white border-bottom">
+            <p><b>none </b></p>
+            <p class="w3-opacity">horário de funcionamento 08:00 ás 18:00</p>
+            <p>praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <div class="operations">
+              <a href=clinica1.html class="w3-button w3-black w3-margin-bottom more-detail-btn">saiba mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

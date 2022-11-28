@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>InfoSaúde</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue.css">
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    body {
+      font-family: "Lato", sans-serif
+    }
+
+    .mySlides {
+      display: none
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)"
+        onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+      <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTATOS</a>
+      <a href="hospitais.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HOSPITAIS</a>
+      <a href="clinicas.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CLÍNICAS</a>
+      <a href="postos.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">POSTOS</a>
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More">MAIS <i class="fa fa-caret-down"></i></button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="sobre.html" class="w3-bar-item w3-button">SOBRE</a>
+          <a href="#" class="w3-bar-item w3-button">PREÇOS</a>
+          <a href="#" class="w3-bar-item w3-button">MAPA</a>
+        </div>
+      </div>
+      <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i
+          class="fa fa-search"></i></a>
+    </div>
+  </div>
+
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+  </div>
+
+  <!-- Header -->
+  <header class="w3-container w3-theme w3-padding" id="myHeader">
+    <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i>
+    <div class="w3-center">
+      <h4> </h4>
+      <img class="w3-image" src="imagens/logo1.png" alt="Architecture" width="300" height="300">
+      </a>
+
+    </div>
+    </div>
+  </header>
+  <!-- Top menu on small screens -->
+  <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+    <span class="w3-bar-item">Rental</span>
+    <a href="javascript:void(0)" class="w3-right w3-bar-item w3-button" onclick="w3_open()"><i
+        class="fa fa-bars"></i></a>
+  </header>
+
+  <main class="wrap-content">
+    <h1 class="w3-text-green">Clínica Vittalis</h1>
+    <div class="clinica-wrap">
+      <div class="clinica-info left-info">
+        <img src="imagens/clinica1.webp" alt="New York" class="border-top" style="width:100%">
+        <div class="basic-info">
+          <strong>Clínica Vittalis</strong>
+          <p><span class="text-bold">Telefone:</span>(86) 9 4002-8922</p>
+          <p><span class="text-bold">Email:</span>clinica.vittalis@gmail.com</p>
+          <p><span class="text-bold">Endereço:</span> Rua Agostinho Pinheiro, 114 Pedro II - PI</p>
+        </div>
+        <div class="localization">
+          <iframe width="240" height="200" style="border:0" loading="lazy" allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAGzMN7kF76Et7SbykYEnPOmydL1-KEp7Y&q=Space+Needle,Seattle+WA">
+          </iframe>
+        </div>
+
+
+        <div class="actions">
+          <button class="btn-schedule">Agendar</button>
+        </div>
+
+
+      </div>
+      <div class="clinica-info right-info">
+        <div class="info-section">
+          <div class="info-section">
+            <h2>Sobre</h2>
+          </div>
+          <h2>Especialidade</h2>
+          <div class="especialidade-row"><span></span></div>
+          <div class="especialidade-row"></div>
+        </div>
+        <div class="info-section">
+          <h2>Agenda</h2>
+        </div>
+        <div class="info-section">
+          <h2>Profissionais</h2>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>

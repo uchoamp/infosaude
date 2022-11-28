@@ -1,0 +1,215 @@
+input,
+button,
+a {
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.smooth,
+.nav-top a {
+  transition: all 0.7s;
+}
+
+.schedule-btn {
+  border-radius: 0.5em;
+  transition: all 0.7s;
+}
+
+.schedule-btn:hover {
+  background-color: #333333;
+}
+
+.more-detail-btn {
+  background-color: #2196f3 !important;
+  border-radius: 0.4em;
+  transition: all 0.3s;
+  margin: 0 auto;
+}
+
+.more-detail-btn:hover {
+  background-color: #1389ea !important;
+  color: white !important;
+}
+
+.operations {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.clinicas-grid {
+  display: grid;
+  width: 100%;
+  grid-gap: 0.7em;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.clinica-item {
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(255, 0, 0, 0.25) 0px 2px 5px -1px,
+    rgba(255, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: opacity 0.3;
+}
+
+.clinica-item:hover {
+  opacity: 0.95;
+}
+
+.border-top {
+  border-radius: 0.4em 0.4em 0 0;
+}
+
+.border-bottom {
+  border-radius: 0 0 0.4em 0.4em;
+}
+
+.wrap-filters {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #1389ea;
+  margin: 0 0 1.5em 0;
+  border-radius: 0.6em;
+  padding: 0.6em 1em;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border: none;
+}
+
+input[type="text"] {
+  outline: none;
+  border: none;
+  background-color: white;
+  padding: 8px 3px;
+  border-radius: 0 2px 2px 0;
+  width: 300px;
+  padding-left: 1em;
+}
+
+select {
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background-color: white;
+  padding: 9px 3px;
+  width: 300px;
+  margin-right: 8px;
+}
+
+.search-input {
+  background-color: rgb(0, 0, 0);
+  border-radius: 4px;
+  padding-left: 6px;
+  margin-left: 12px;
+}
+
+.search-input>i {
+  font-size: 1.2em;
+  border-radius: 4px;
+  margin: 3px;
+  cursor: pointer;
+}
+
+.wrap-content {
+  display: block;
+  width: 100%;
+  padding: 1em 10vw;
+}
+
+.wrap-content>h1 {
+  text-align: center;
+}
+
+.clinica-wrap {
+  display: flex;
+  width: 100%;
+}
+
+.clinica-info {
+  border: solid 1px black;
+  border-radius: 0.8em;
+  margin: 0.4em;
+  height: 170vh;
+  padding: .3em;
+}
+
+.clinica-wrap .left-info {
+  width: 25%;
+}
+
+.clinica-wrap .right-info {
+  flex: 1;
+}
+
+.basic-info {
+  margin-top: 2em;
+}
+
+.basic-info strong {
+  display: block;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.basic-info>p {
+  margin: 0;
+  margin-bottom: .4em;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.clinica-info>.actions {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+.clinica-info>.localization {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-schedule {
+  width: 200px;
+  border-radius: 3px;
+  padding: 5px;
+  background-color: #1389ea;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all .4s;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 0px 0px;
+}
+
+.btn-schedule:hover {
+  background-color: #077bdb;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+.info-section {
+  width: 100%;
+  margin-bottom: .5em;
+}
+
+.info-section>h2 {
+  font-size: 1.6em;
+  text-align: center;
+}
