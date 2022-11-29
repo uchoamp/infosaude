@@ -109,7 +109,7 @@ input[type="text"] {
   padding-left: 1em;
 }
 
-select {
+#especialidade {
   border: none;
   outline: none;
   border-radius: 4px;
@@ -343,4 +343,90 @@ span.especialidade {
   text-align: center;
   font-size: 1.15em;
   margin-top: 3px;
+}
+
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 899;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  width: 30vw;
+  border-radius: .3em;
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  color: #aaaaaa;
+  float: right;
+  font-weight: bold;
+  top: 0;
+  right: 3px;
+  transition: color .3s;
+  font-size: 1.7em;
+  line-height: 1em;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(99, 99, 99);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.form-title {
+  background-color: #077bdb !important;
+}
+
+.schedule-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: .5em;
+}
+
+.schedule-form label {
+  display: block;
+  width: 100%;
+}
+
+.schedule-form input {
+  display: block;
+  width: 100%;
+}
+
+.btn-new {
+  background-color: #077bdb;
+  color: white;
+  border-radius: 3px;
+  transition: all .3s;
 }
