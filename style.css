@@ -1,12 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-input,
-button,
-a {
-  outline: none;
-  border: none;
-  text-decoration: none;
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 html,
 body {
@@ -15,7 +7,17 @@ body {
 }
 
 * {
-  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+li {
+  list-style: none;
 }
 
 .logo {
@@ -133,7 +135,7 @@ select {
 .wrap-content {
   display: block;
   width: 100%;
-  padding: 1em 10vw;
+  padding: 1em 7vw;
 }
 
 .wrap-content>h1 {
@@ -151,7 +153,7 @@ select {
   border-radius: 0.8em;
   margin: 0.4em;
   height: 170vh;
-  padding: .3em;
+  padding: 0.3em;
 }
 
 .clinica-wrap .left-info {
@@ -174,7 +176,7 @@ select {
 
 .basic-info>p {
   margin: 0;
-  margin-bottom: .4em;
+  margin-bottom: 0.4em;
 }
 
 .text-bold {
@@ -203,7 +205,7 @@ select {
   color: white;
   font-weight: bold;
   cursor: pointer;
-  transition: all .4s;
+  transition: all 0.4s;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 0px 0px;
 }
 
@@ -212,10 +214,9 @@ select {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-
 .info-section {
   width: 100%;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 .info-section>h2 {
@@ -224,7 +225,7 @@ select {
 }
 
 .info-section .info-content {
-  padding: .5em;
+  padding: 0.5em;
   background-color: #2195f378;
   border-radius: 8px;
   color: rgb(0, 0, 0);
@@ -245,7 +246,58 @@ span.especialidade {
   background-color: #168ae9;
   color: white;
   font-weight: bold;
-  padding: .4em .8em;
+  padding: 0.4em 0.8em;
   border-radius: 8px;
-  margin: .2em;
+  margin: 0.2em;
+}
+
+.agenda-semana {
+  display: flex;
+}
+
+.agenda-semana .semana {
+  margin: 0.3em;
+  flex: 1;
+  min-height: 300px;
+}
+
+.semana .dia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #168ae9;
+  width: 100%;
+  height: 80px;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 0.4em;
+  color: white;
+  font-size: 1.3em;
+}
+
+.semana .horario {
+  background-color: #168ae9c2;
+  width: 100%;
+  min-height: 80px;
+  border-radius: 6px;
+  color: white;
+  margin: .3em 0;
+}
+
+.horario .horas {
+  font-weight: normal;
+  display: block;
+  text-align: center;
+  font-size: .9em;
+}
+
+.horario .atuacoes {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: .4em;
+}
+
+.horario .atuacoes>li {
+  display: block;
+  font-size: .7em;
 }
