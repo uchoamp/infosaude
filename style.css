@@ -35,7 +35,7 @@ li {
 
 .schedule-btn {
   border-radius: 0.5em;
-  transition: all 0.7s;
+  transition: all 0.1s;
 }
 
 .schedule-btn:hover {
@@ -532,6 +532,77 @@ span.especialidade {
 
 
 
+
+
+
+
+
+.home>.agenda-semana {
+  min-height: 500px;
+  margin-bottom: 3em;
+  flex-direction: column;
+}
+
+.home>.agenda-semana h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.home .agenda-filters-nav {
+  height: 100px;
+  background-color: white;
+}
+
+.agenda-filters {
+  display: flex;
+  padding: 6px;
+  justify-content: center;
+  padding-bottom: 1em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.083);
+}
+
+.agenda-filters .especialidade {
+  display: inline;
+  border: solid 1px black;
+  border-radius: 2px;
+  padding: 5px 10px;
+  transition: all .3s ease-out;
+  cursor: pointer;
+  margin: 0 3px;
+}
+
+.especialidade.active {
+  border: solid 1px #077bdb;
+  background-color: #077bdb;
+  color: white;
+}
+
+.agenda-nav {
+  margin-top: .5em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: .5em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.083);
+}
+
+.agenda-nav span {
+  font-size: 1.2em;
+}
+
+.agenda-nav button {
+  color: white;
+  padding: 8px 12px;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: #077bdb;
+  transition: all .3s ease-out;
+}
+
+.agenda-nav button:hover {
+  background-color: #0573cd;
+}
 
 /* STYLES SPECIFIC TO FOOTER  */
 .footer-space {

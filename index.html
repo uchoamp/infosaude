@@ -122,7 +122,36 @@
       </div>
     </div>
   </header>
-  <main class="wrap-content">
+  <main class="wrap-content home">
+    <div class="agenda-semana">
+      <h2>Agenda da Semana</h2>
+      <hr>
+
+      <div class="agenda-filters-nav">
+        <ul class="agenda-filters">
+          <li class="especialidade" onclick="toggleActive(this)">Clínico Geral</li>
+          <li class="especialidade" onclick="toggleActive(this)">Ginecologista</li>
+          <li class="especialidade" onclick="toggleActive(this)">Cardiologista</li>
+          <li class="especialidade" onclick="toggleActive(this)">Pediatria</li>
+          <li class="especialidade" onclick="toggleActive(this)">Odontologia</li>
+          <li class="especialidade" onclick="toggleActive(this)">Neurologia</li>
+          <li class="especialidade" onclick="toggleActive(this)">Endocrinologista</li>
+          <li class="especialidade" onclick="toggleActive(this)">Dermatologista</li>
+          <li class="especialidade" onclick="toggleActive(this)">Otorrino</li>
+        </ul>
+        <div class="agenda-nav">
+          <span>Terça, 20 de Dezembro</span>
+          <button class="btn proxima-semana">PRÓXIMA SEMANA</button>
+        </div>
+      </div>
+
+      <div class="semana">
+        <div class="dias"></div>
+        <div class="horarios"></div>
+      </div>
+    </div>
+
+    <hr>
 
     <div class="clinicas w3-row">
       <div class="w3-third w3-row-padding w3-center w3-margin-top">

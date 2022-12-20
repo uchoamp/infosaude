@@ -1,3 +1,7 @@
+function toggleActive(element) {
+  element.classList.toggle("active");
+}
+
 // Get the modal
 var modal = document.getElementById("myModal");
 
