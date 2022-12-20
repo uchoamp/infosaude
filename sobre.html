@@ -1,80 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>InfoSaúde</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue.css">
-<style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
-</style>
+  <title>InfoSaúde</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue.css">
+  <style>
+    body {
+      font-family: "Lato", sans-serif
+    }
+
+    .mySlides {
+      display: none
+    }
+  </style>
 </head>
+
 <body>
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-black w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTATOS</a>
-    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HOSPITAIS</a>
-    <a href="clinicas.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CLÍNICAS</a>
-    <a href="postos.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">POSTOS</a>
-    <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button" title="More">MAIS <i class="fa fa-caret-down"></i></button>     
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="#" class="w3-bar-item w3-button">SOBRE</a>
-        <a href="#" class="w3-bar-item w3-button">PREÇOS</a>
-        <a href="#" class="w3-bar-item w3-button">MAPA</a>
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)"
+        onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+      <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTATOS</a>
+      <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HOSPITAIS</a>
+      <a href="clinicas.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CLÍNICAS</a>
+      <a href="postos.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">POSTOS</a>
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More">MAIS <i class="fa fa-caret-down"></i></button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="#" class="w3-bar-item w3-button">SOBRE</a>
+          <a href="#" class="w3-bar-item w3-button">PREÇOS</a>
+          <a href="#" class="w3-bar-item w3-button">MAPA</a>
+        </div>
       </div>
     </div>
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
   </div>
-</div>
 
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
-  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
-</div>
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+  </div>
 
   <!-- Header -->
-<header class="w3-container w3-theme w3-padding" id="myHeader">
-  <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i> 
-  <div class="w3-center">
-  <h4>   </h4>
-  <img class="w3-image" src="imagens/logo1.png" alt="Architecture" width="300" height="300">
-   </a>
+  <header class="w3-container w3-theme w3-padding" id="myHeader">
+    <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i>
+    <div class="w3-center">
+      <h4> </h4>
+      <img class="w3-image" src="imagens/logo1.png" alt="Architecture" width="300" height="300">
+      </a>
 
     </div>
-  </div>
-</header>
+    </div>
+  </header>
 
-   <!-- The Tour Section -->
+  <!-- The Tour Section -->
   <div class="w3-black" id="tour">
 
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">Sobre Nós</h3>
-  <p class="w3-center"><em>Quem somos?</em></p>
-  <p>Somos uma empresa que se preocupa com o bem-estar da população de Pedro II, nossa equipe entende como um acesso facilitado à saúde é necessário, somos pessoas que sentiram a necessidade de auxiliar ainda mais o sistema de saúde de nossa cidade, por isso desenvolvemos esse site para ajudar a população à obter informações de saúde de forma mais fácil e rápida.
-    
-    Somos uma empresa que se preocupa com cada cidadão dessa cidade, nós da InfoSaúde desenvolvemos esse site pensando em você, e no seu conforto. Acreditamos que trazer praticidade no dia a dia de cada pessoa é um fator muito importante, por isso oferecemos este site para que você encontre todas informações que precisa em relação a saúde municipal. 
-</p>
-  <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <img src="imagens/logo.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
-    </div>
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+      <h3 class="w3-center">Sobre Nós</h3>
+      <p class="w3-center"><em>Quem somos?</em></p>
+      <p>Somos uma empresa que se preocupa com o bem-estar da população de Pedro II, nossa equipe entende como um acesso
+        facilitado à saúde é necessário, somos pessoas que sentiram a necessidade de auxiliar ainda mais o sistema de
+        saúde de nossa cidade, por isso desenvolvemos esse site para ajudar a população à obter informações de saúde de
+        forma mais fácil e rápida.
 
-    <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p class="w3-center"><em>O que fazemos?</em></p>
-      <p> Nossa premissa é trazer um maior acesso à informações relacionadas às intituições de saúde, buscamos facilitar essa troca de informações com a população, de forma simples, rápida e direta. Reunimos todas as principais instituições de saúde da região e as informações de cada uma delas, tudo isso em um só lugar para que você não passe por frustrações e nem perca tempo buscando informações de um hospital ou clínica que deseja atendimento. 
+        Somos uma empresa que se preocupa com cada cidadão dessa cidade, nós da InfoSaúde desenvolvemos esse site
+        pensando em você, e no seu conforto. Acreditamos que trazer praticidade no dia a dia de cada pessoa é um fator
+        muito importante, por isso oferecemos este site para que você encontre todas informações que precisa em relação
+        a saúde municipal.
       </p>
-    </div>
+      <div class="w3-row">
+        <div class="w3-col m6 w3-center w3-padding-large">
+          <img src="imagens/logo.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me"
+            width="500" height="333">
+        </div>
+
+        <!-- Hide this text on small devices -->
+        <div class="w3-col m6 w3-hide-small w3-padding-large">
+          <p class="w3-center"><em>O que fazemos?</em></p>
+          <p> Nossa premissa é trazer um maior acesso à informações relacionadas às intituições de saúde, buscamos
+            facilitar essa troca de informações com a população, de forma simples, rápida e direta. Reunimos todas as
+            principais instituições de saúde da região e as informações de cada uma delas, tudo isso em um só lugar para
+            que você não passe por frustrações e nem perca tempo buscando informações de um hospital ou clínica que
+            deseja atendimento.
+          </p>
+        </div>
