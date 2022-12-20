@@ -1,78 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>Postos de Saúde - InfoSaúde</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue.css">
-<style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
-</style>
+  <title>Postos de Saúde - InfoSaúde</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue.css">
+  <style>
+    body {
+      font-family: "Lato", sans-serif
+    }
+
+    .mySlides {
+      display: none
+    }
+  </style>
 </head>
+
 <body>
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-black w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTATOS</a>
-    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HOSPITAIS</a>
-    <a href="clinicas.html"class="w3-bar-item w3-button w3-padding-large w3-hide-small">CLÍNICAS</a>
-    <a href="postos.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">POSTOS</a>
-    <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button" title="More">MAIS <i class="fa fa-caret-down"></i></button>     
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="sobre.html" class="w3-bar-item w3-button">SOBRE</a>
-        <a href="#" class="w3-bar-item w3-button">PREÇOS</a>
-        <a href="#" class="w3-bar-item w3-button">MAPA</a>
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)"
+        onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+      <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTATOS</a>
+      <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HOSPITAIS</a>
+      <a href="clinicas.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CLÍNICAS</a>
+      <a href="postos.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">POSTOS</a>
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More">MAIS <i class="fa fa-caret-down"></i></button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="sobre.html" class="w3-bar-item w3-button">SOBRE</a>
+          <a href="#" class="w3-bar-item w3-button">PREÇOS</a>
+          <a href="#" class="w3-bar-item w3-button">MAPA</a>
+        </div>
       </div>
+      <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i
+          class="fa fa-search"></i></a>
     </div>
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
   </div>
-</div>
 
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
-  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
-</div>
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+  </div>
 
   <!-- Header -->
-<header class="w3-container w3-theme w3-padding" id="myHeader">
-  <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i> 
-  <div class="w3-center">
-  <h4>   </h4>
-  <img class="w3-image" src="imagens/logo1.png" alt="Architecture" width="300" height="300">
-   </a>
+  <header class="w3-container w3-theme w3-padding" id="myHeader">
+    <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i>
+    <div class="w3-center">
+      <h4> </h4>
+      <img class="w3-image" src="imagens/logo1.png" alt="Architecture" width="300" height="300">
+      </a>
 
     </div>
-  </div>
-</header>
-   <!-- The Tour Section -->
+    </div>
+  </header>
+  <!-- The Tour Section -->
   <div class="w3-black" id="tour">
     <div class="w3-container w3-content w3-padding-5" style="max-width:800px">
       <h2 class="w3-wide w3-center">Hospitais</h2>
       <p class="w3-opacity w3-center"><i>Veja aqui os hospitais da região de Pedro II</i></p><br>
 
-  <!-- hospitais -->
+      <!-- hospitais -->
 
-
-<div class="w3-row-padding w3-padding-15" style="margin:0 -10px">
+      <div class="w3-row-padding w3-padding-15" style="margin:0 -10px">
         <div class="w3-third w3-margin-bottom">
           <img src="imagens/hospital1.webp" alt="New York" style="width:100%" class="w3-hover-opacity">
           <div class="w3-container w3-white">
             <p><b>HOSPITAL JOSEFINA</b></p>
             <p class="w3-opacity">Horario 08:00 ás 18:00</p>
             <p>Rua Raimundo José Leite Bairro: Santa fé</p>
-            <a href=clinica1.html
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Saber Mais </button></a>
+            <a href=clinic1.html></a> <button class="w3-button w3-black w3-margin-bottom"
+              onclick="document.getElementById('ticketModal').style.display='block'">Saber Mais </button>
           </div>
         </div>
         <div class="w3-third w3-margin-bottom">
@@ -81,7 +89,8 @@ body {font-family: "Lato", sans-serif}
             <p><b>Hospital São Camilo</b></p>
             <p class="w3-opacity">Sat 28 Nov 2016</p>
             <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+            <button class="w3-button w3-black w3-margin-bottom"
+              onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
           </div>
         </div>
         <div class="w3-third w3-margin-bottom">
@@ -90,7 +99,8 @@ body {font-family: "Lato", sans-serif}
             <p><b>San Francisco</b></p>
             <p class="w3-opacity">Sun 29 Nov 2016</p>
             <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+            <button class="w3-button w3-black w3-margin-bottom"
+              onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
           </div>
         </div>
       </div>
@@ -101,16 +111,17 @@ body {font-family: "Lato", sans-serif}
   <!-- The Tour Section -->
   <div class="w3-black" id="tour">
     <div class="w3-container w3-content w3-padding-5" style="max-width:800px">
-  <!-- hospitais -->
+      <!-- hospitais -->
 
-<div class="w3-row-padding w3-padding-15" style="margin:0 -16px">
+      <div class="w3-row-padding w3-padding-15" style="margin:0 -16px">
         <div class="w3-third w3-margin-bottom">
           <img src="imagens/noimage.webp" alt="New York" style="width:100%" class="w3-hover-opacity">
           <div class="w3-container w3-white">
             <p><b>None</b></p>
             <p class="w3-opacity">Fri 27 Nov 2016</p>
             <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+            <button class="w3-button w3-black w3-margin-bottom"
+              onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
           </div>
         </div>
         <div class="w3-third w3-margin-bottom">
@@ -119,7 +130,8 @@ body {font-family: "Lato", sans-serif}
             <p><b>None</b></p>
             <p class="w3-opacity">Sat 28 Nov 2016</p>
             <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+            <button class="w3-button w3-black w3-margin-bottom"
+              onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
           </div>
         </div>
         <div class="w3-third w3-margin-bottom">
@@ -128,9 +140,11 @@ body {font-family: "Lato", sans-serif}
             <p><b>None</b></p>
             <p class="w3-opacity">Sun 29 Nov 2016</p>
             <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+            <button class="w3-button w3-black w3-margin-bottom"
+              onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
           </div>
         </div>
       </div>
     </div>
   </div>
+</body>

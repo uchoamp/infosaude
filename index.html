@@ -10,16 +10,10 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="/style.css">
-  <style>
-    body {
-      font-family: "Lato", sans-serif
-    }
-
-    .mySlides {
-      display: none
-    }
-  </style>
 </head>
 
 <body>
@@ -69,74 +63,88 @@
       </div>
     </div>
   </header>
+  <main class="wrap-content">
 
-
-  <div class="w3-row-padding w3-center w3-margin-top">
-    <a href="hospitais.html">
-      <div class="w3-third">
-        <div class="w3-card w3-container" style="min-height:460px">
-          <h3>Hospitais</h3><br>
-          <img class="w3-image" src="imagens/1.png" alt="Architecture" width="250" height="250">
-          <p>Todos os Hospitais da região listados</p>
-        </div>
-    </a>
-  </div>
-
-  <div class="w3-third">
-    <a href="clinicas.html">
-      <div class="w3-card w3-container" style="min-height:460px">
-        <h3>Clínicas</h3><br>
-        <img class="w3-image" src="imagens/2.png" alt="Architecture" width="250" height="250">
-        <p>Todas as clínicas da região listadas</p>
+    <div class="clinicas w3-row">
+      <div class="w3-third w3-row-padding w3-center w3-margin-top">
+        <a href="hospitais.html">
+          <div class="w3-card w3-container" style="min-height:460px">
+            <h3>Hospitais</h3><br>
+            <img class="w3-image" src="imagens/1.png" alt="Architecture" width="250" height="250">
+            <p>Todos os Hospitais da região listados</p>
+          </div>
+        </a>
       </div>
-    </a>
-  </div>
-
-  <div class="w3-third">
-    <a href="javascript:void(0)">
-      <div class="w3-card w3-container" style="min-height:460px">
-        <h3>Postos de Saúde</h3><br>
-        <img class="w3-image" src="imagens/3.png" alt="Architecture" width="250" height="250">
-        <p>Todos os Postos de Saúde da região listados</p>
+      <div class="w3-third w3-row-padding w3-center w3-margin-top">
+        <a href="clinicas.html">
+          <div class="w3-card w3-container" style="min-height:460px">
+            <h3>Clínicas</h3><br>
+            <img class="w3-image" src="imagens/2.png" alt="Architecture" width="250" height="250">
+            <p>Todas as clínicas da região listadas</p>
+          </div>
+        </a>
       </div>
-    </a>
-  </div>
-  </div>
-  <!-- The Modal -->
-  <div id="myModal" class="modal">
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <div class="w3-container w3-teal form-title">
-        <h2>Marcar Consulta</h2>
+      <div class="w3-third w3-row-padding w3-center w3-margin-top">
+        <a href="javascript:void(0)">
+          <div class="w3-card w3-container" style="min-height:460px">
+            <h3>Postos de Saúde</h3><br>
+            <img class="w3-image" src="imagens/3.png" alt="Architecture" width="250" height="250">
+            <p>Todos os Postos de Saúde da região listados</p>
+          </div>
+        </a>
       </div>
-      <form action="javascript:void()" class="w3-container schedule-form">
 
-        <label class="w3-text"><b>Nome</b></label>
-        <input class="w3-input w3-border w3-light-white" type="text">
+    </div>
 
-        <label class="w3-text"><b>Telefone</b></label>
-        <input class="w3-input w3-border w3-light-white" type="phone">
 
-        <label class="w3-text"><b>Especialidade</b></label>
-        <select class="w3-select w3-border" name="option">
-          <option value="" disabled selected></option>
-          <option value="1">Cardiologia</option>
-          <option value="2">Dermatologia</option>
-          <option value="3">Ginecologia </option>
-          <option value="4">Ortopedia</option>
-          <option value="5">Anestesiologia</option>
-        </select>
+  </main>
 
-        <label class="w3-text"><b>Dia</b></label>
-        <input class="w3-input w3-border w3-light-white" type="date">
 
-        <label class="w3-text"><b>Horário</b></label>
-        <input class="w3-input w3-border w3-light-white" type="time">
 
-        <button class="w3-btn w3-margin btn-new">Agendar consulta</button>
-      </form>
+  <!-- FOOTER START -->
+  <div class="footer">
+    <div class="contain">
+      <div class="col">
+        <h1>Info Saúde</h1>
+        <ul>
+          <li>Sobre</li>
+          <li>Objetivos</li>
+          <li>Serviços</li>
+          <li>Social</li>
+          <li>Contato</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h1>Estabelecimentos</h1>
+        <ul>
+          <li>Clínicas</li>
+          <li>Hospitais</li>
+          <li>UBS</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h1>Parcerias</h1>
+        <ul>
+          <li>Resgitro</li>
+          <li>Anúncios</li>
+          <li>Afiliados</li>
+        </ul>
+      </div>
+      <div class="col">
+      </div>
+      <div class="col">
+      </div>
+      <div class="col social">
+        <h1>Social</h1>
+        <ul>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </ul>
+      </div>
+      <div class="clearfix"></div>
     </div>
   </div>
+  <!-- END OF FOOTER -->
   <script src="/script.js"></script>
 </body>
