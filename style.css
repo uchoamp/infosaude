@@ -538,7 +538,7 @@ span.especialidade {
 
 
 .home>.agenda-semana {
-  min-height: 500px;
+  min-height: 680px;
   margin-bottom: 3em;
   flex-direction: column;
 }
@@ -603,6 +603,110 @@ span.especialidade {
 .agenda-nav button:hover {
   background-color: #0573cd;
 }
+
+.semana-main {
+  margin-top: 20px;
+}
+
+.semana-main .dias,
+.semana-main .horarios {
+  display: flex;
+}
+
+.semana-main .dia-semana {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  margin: 3px;
+  flex: 1;
+  border: solid 1px #07061722;
+}
+
+.dia-semana strong {
+  font-size: 1.7em;
+  margin-bottom: 0;
+}
+
+.dia-semana strong.ativo {
+  background-color: #0573cd;
+  padding: 2px 4px;
+  color: white;
+  border-radius: 3px;
+}
+
+.dia-semana span {
+  margin-top: 0;
+  font-size: .8em;
+  color: #0000009f;
+  font-weight: 500;
+}
+
+.semana-main .horarios-dia {
+  flex-direction: column;
+  height: 80px;
+  margin: 3px;
+  flex: 1;
+  border: solid 1px #07061700;
+}
+
+
+.horarios-dia .horario-dia {
+  color: white;
+  display: flex;
+  width: 100%;
+  background-color: #0573cd;
+  /* height: 80px; */
+  border-radius: 3px;
+  margin-bottom: 3px;
+}
+
+.horario-dia .horas {
+  display: flex;
+  flex-direction: column;
+  font-size: .8em;
+  padding: 3px;
+  justify-content: space-between;
+  border-right: solid 1px white;
+}
+
+.horario-dia .horario-info {
+  flex: 1;
+  padding: 3px 0 3px 0;
+}
+
+.horario-info strong {
+  display: block;
+  font-size: .9em;
+  text-align: center;
+  border-bottom: solid 1px white;
+}
+
+.horario-info p {
+  margin-left: 3px;
+  font-size: .85em;
+  margin-bottom: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* STYLES SPECIFIC TO FOOTER  */
 .footer-space {
